@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homeclean 台北/新北專業個人居家清潔 ｜ 官方網站</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="台北、新北在地個人到府居家清潔服務。提供定期清潔、重點深層清潔與搬家空屋細清。價格透明、良民證認證、細心負責，即刻預約享受煥然一新的舒適住家！">
+    <meta name="keywords" content="台北居家清潔, 新北到府打掃, 個人清潔師, 浴室去水垢, 廚房去油污, 空屋細清, 清潔費用計算">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://homeclean.tw/">
+
+    <!-- Open Graph (LINE / FB 分享預覽卡片) -->
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="homeclean 雙北專業個人居家清潔 ｜ 價格透明 ‧ 一鍵加 LINE 預約">
+    <meta property="og:description" content="忙了一整天懶得打掃？個人專業清潔師到府，無大公司抽成負擔，細緻無死角打掃。即刻計算費用並加 LINE 預約！">
+    <meta property="og:url" content="https://homeclean.tw/">
+    <meta property="og:site_name" content="homeclean 居家清潔">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome 圖示庫 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+        }
+        .b-a-badge {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- 1. 頂部導覽列 (Header) -->
+    <header class="sticky top-0 z-40 glass-nav shadow-sm border-b border-slate-100 transition-all">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl sm:text-2xl font-black tracking-tight text-emerald-600 flex items-center gap-2">
+                <div class="w-9 h-9 bg-emerald-500 text-white rounded-xl flex items-center justify-center shadow-md shadow-emerald-200">
+                    <i class="fa-solid fa-sparkles text-lg"></i>
+                </div>
+                <span>homeclean<span class="text-xs font-semibold text-slate-400 ml-0.5">.tw</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#services" class="hover:text-emerald-600 transition-colors">服務介紹</a>
+                <a href="#calculator" class="hover:text-emerald-600 transition-colors">費用估算</a>
+                <a href="#gallery" class="hover:text-emerald-600 transition-colors">成果展示</a>
+                <a href="#process" class="hover:text-emerald-600 transition-colors">預約流程</a>
+                <a href="#faq" class="hover:text-emerald-600 transition-colors">常見問題</a>
+            </nav>
+
+            <a href="https://line.me/R/ti/p/@your_line_id" target="_blank" rel="noopener"
+               class="bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white text-sm font-bold px-4 sm:px-5 py-2.5 rounded-full shadow-md shadow-emerald-200 transition-all duration-200 flex items-center gap-2">
+                <i class="fa-brands fa-line text-lg"></i>
+                <span>加 LINE 諮詢</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. 主視覺區 (Hero Section) -->
+    <section class="relative py-12 md:py-20 overflow-hidden bg-gradient-to-b from-emerald-50/60 via-slate-50 to-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-8 items-center">
+
+            <div class="md:col-span-7 space-y-6 text-center md:text-left">
+                <!-- 信任標籤組 -->
+                <div class="inline-flex flex-wrap justify-center md:justify-start gap-2">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white border border-emerald-200 text-emerald-700 text-xs font-semibold rounded-full shadow-sm">
+                        <i class="fa-solid fa-id-card text-emerald-500"></i> 良民證已認證
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white border border-emerald-200 text-emerald-700 text-xs font-semibold rounded-full shadow-sm">
+                        <i class="fa-solid fa-handshake text-emerald-500"></i> 100% 個人到府無抽成
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white border border-emerald-200 text-emerald-700 text-xs font-semibold rounded-full shadow-sm">
+                        <i class="fa-solid fa-spray-can-sparkles text-emerald-500"></i> 自備環保中性藥劑
+                    </span>
+                </div>
+
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
+                    把時間留給重要的人<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">
+                        雙北個人細緻居家清潔
+                    </span>
+                </h1>
+
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
+                    忙碌一整天，回家不該再為積塵與水垢煩惱。由經驗豐富的個人清潔師親自到府，不隨便趕時間、注重每個隱蔽死角，給您安心放心的潔淨感受。
+                </p>
+
+                <!-- 特色清單 -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-left max-w-lg mx-auto md:mx-0 pt-1 text-sm font-medium text-slate-700">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i> 明碼實價無隱藏費
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i> 單次預約不綁定期
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i> 現場驗收滿意再付
+                    </div>
+                </div>
+
+                <!-- CTA 按鈕區 -->
+                <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="https://line.me/R/ti/p/@your_line_id" target="_blank" rel="noopener"
+                       class="bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl shadow-emerald-200 hover:shadow-emerald-300 transition-all flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-line text-2xl"></i>
+                        <span>點我加 LINE 免費估價</span>
+                    </a>
+                    <a href="#calculator"
+                       class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-bold text-base px-6 py-4 rounded-2xl transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-calculator text-emerald-500"></i>
+                        <span>快速試算費用</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:col-span-5 relative">
+                <!-- 主圖與小裝飾 -->
+                <div class="relative mx-auto max-w-md md:max-w-none">
+                    <img src="./hero-cleaning.jpg"
+                        alt="居家清潔實景"
+                         class="rounded-3xl shadow-2xl object-cover object-top w-full h-[380px] sm:h-[440px] border-4 border-white">
+
+                    <!-- 浮動卡片 1 -->
+                    <div class="absolute -bottom-5 -left-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400 font-semibold">客戶滿意度</div>
+                            <div class="text-sm font-bold text-slate-800">4.9 / 5.0 極致好評</div>
+                        </div>
+                    </div>
+
+                    <!-- 浮動卡片 2 -->
+                    <div class="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span class="text-xs font-bold text-slate-700">雙北到府 ‧ 本週開放預約</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. 服務內容細節介紹 (Services Breakdown) -->
+    <section id="services" class="py-16 bg-white border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Detail Checklist</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">細緻分區 ‧ 清潔施作細節</h2>
+                <p class="text-slate-500 mt-3 text-base">個人清潔師專注每個角落，透明化施作項目，讓您一目瞭然。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- 區域 1: 浴室衛浴 -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-emerald-500 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-md shadow-emerald-200 mb-5">
+                        <i class="fa-solid fa-shower"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">浴室衛浴深層</h3>
+                    <p class="text-slate-500 text-xs mb-4 leading-relaxed">水垢霉斑重災區專項處理，恢復玻璃與水龍頭亮麗。</p>
+                    <ul class="space-y-2.5 text-xs text-slate-700 font-medium">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 洗手檯、玻璃隔間水垢刮除</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 馬桶內外角落高溫消毒清潔</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 牆面磁磚縫隙霉斑刷洗</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 排水孔毛髮清理與去味刷洗</li>
+                    </ul>
+                </div>
+
+                <!-- 區域 2: 廚房區域 -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-emerald-500 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-md shadow-emerald-200 mb-5">
+                        <i class="fa-solid fa-fire-burner"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">廚房油污去垢</h3>
+                    <p class="text-slate-500 text-xs mb-4 leading-relaxed">針對烹飪油垢深層溶解，還給您乾淨無黏膩的料理台。</p>
+                    <ul class="space-y-2.5 text-xs text-slate-700 font-medium">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 抽油煙機外殼與集油盒去油</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 瓦斯爐台、壁面油污擦拭</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 流理台槽體拋光與水龍頭除垢</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 櫥櫃外門板油脂髒污除塵</li>
+                    </ul>
+                </div>
+
+                <!-- 區域 3: 客廳與臥室 -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-emerald-500 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-md shadow-emerald-200 mb-5">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">客廳與臥室整理</h3>
+                    <p class="text-slate-500 text-xs mb-4 leading-relaxed">營造沉靜放鬆的休閒空間，遠離灰塵顆粒與雜亂。</p>
+                    <ul class="space-y-2.5 text-xs text-slate-700 font-medium">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 全室地板吸塵與濕拖除塵</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 電視櫃、桌面、傢俱表面除塵</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 沙發縫隙清理與床鋪整理</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 門板、開關面板手痕擦拭</li>
+                    </ul>
+                </div>
+
+                <!-- 區域 4: 陽台與細節 -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-emerald-500 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-md shadow-emerald-200 mb-5">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">門窗與陽台維護</h3>
+                    <p class="text-slate-500 text-xs mb-4 leading-relaxed">聚焦於平時最容易忽略的灰塵死角與窗溝溝槽。</p>
+                    <ul class="space-y-2.5 text-xs text-slate-700 font-medium">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 室內窗戶玻璃擦拭拭亮</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 鋁門窗溝槽積塵專用刷吸</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 陽台地面掃除與雜物整理</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i> 垃圾打包集中至指定區域</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 可按式費用計算機 (Interactive Pricing Selector) -->
+    <section id="calculator" class="py-16 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Interactive Cost Calculator</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">預估費用 ‧ 線上即時計算</h2>
+                <p class="text-slate-500 mt-2 text-sm sm:text-base">請點選您的需求項目，系統將自動試算價格與建議時數。</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl p-6 sm:p-10 border border-slate-200">
+
+                <!-- 步驟 1: 選擇服務類型 -->
+                <div class="mb-8">
+                    <label class="block text-sm font-bold text-slate-800 mb-3">1. 選擇清潔服務類型：</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <button type="button" onclick="selectType('regular', 500)" id="btn-type-regular"
+                                class="type-btn p-4 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-emerald-800 font-bold text-left transition-all flex flex-col justify-between">
+                            <div>
+                                <div class="text-base">定期居家清潔</div>
+                                <div class="text-xs font-normal text-slate-500 mt-1">適用日常維持/每週或雙週</div>
+                            </div>
+                            <div class="text-emerald-600 font-black text-lg mt-3">$500 <span class="text-xs text-slate-400 font-normal">/ 小時</span></div>
+                        </button>
+
+                        <button type="button" onclick="selectType('deep', 600)" id="btn-type-deep"
+                                class="type-btn p-4 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 font-bold text-left transition-all hover:border-emerald-300 flex flex-col justify-between">
+                            <div>
+                                <div class="text-base">重點深層去污</div>
+                                <div class="text-xs font-normal text-slate-500 mt-1">適用廚房重油垢/浴室頑固水垢</div>
+                            </div>
+                            <div class="text-emerald-600 font-black text-lg mt-3">$600 <span class="text-xs text-slate-400 font-normal">/ 小時</span></div>
+                        </button>
+
+                        <button type="button" onclick="selectType('empty', 700)" id="btn-type-empty"
+                                class="type-btn p-4 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 font-bold text-left transition-all hover:border-emerald-300 flex flex-col justify-between">
+                            <div>
+                                <div class="text-base">空屋細清 / 搬家</div>
+                                <div class="text-xs font-normal text-slate-500 mt-1">退租入住/全室無家具細清</div>
+                            </div>
+                            <div class="text-emerald-600 font-black text-lg mt-3">$700 <span class="text-xs text-slate-400 font-normal">/ 小時</span></div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 步驟 2: 選擇預估時數 -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-center mb-3">
+                        <label class="text-sm font-bold text-slate-800">2. 選擇預計服務時數：</label>
+                        <span id="hours-display" class="text-emerald-600 font-black text-lg">3 小時</span>
+                    </div>
+                    <div class="grid grid-cols-4 gap-2 sm:gap-3">
+                        <button type="button" onclick="selectHours(3)" id="btn-hrs-3" class="hrs-btn py-3 rounded-xl border-2 border-emerald-500 bg-emerald-50 text-emerald-800 font-bold text-center">3 小時</button>
+                        <button type="button" onclick="selectHours(4)" id="btn-hrs-4" class="hrs-btn py-3 rounded-xl border-2 border-slate-200 bg-white text-slate-700 font-bold text-center hover:border-emerald-300">4 小時</button>
+                        <button type="button" onclick="selectHours(5)" id="btn-hrs-5" class="hrs-btn py-3 rounded-xl border-2 border-slate-200 bg-white text-slate-700 font-bold text-center hover:border-emerald-300">5 小時</button>
+                        <button type="button" onclick="selectHours(6)" id="btn-hrs-6" class="hrs-btn py-3 rounded-xl border-2 border-slate-200 bg-white text-slate-700 font-bold text-center hover:border-emerald-300">6 小時</button>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2"><i class="fa-solid fa-circle-info text-emerald-500"></i> 單次服務基本起跳為 3 小時；20坪以上建議選擇 4 小時以上效果更佳。</p>
+                </div>
+
+                <!-- 試算結果總結卡片 -->
+                <div class="bg-emerald-950 text-white p-6 rounded-2xl flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div>
+                        <div class="text-xs text-emerald-300 font-medium">預估試算總金額</div>
+                        <div class="text-3xl sm:text-4xl font-black text-emerald-400 mt-1" id="total-price">NT$ 1,500</div>
+                        <div class="text-xs text-slate-300 mt-1" id="summary-desc">定期居家清潔 ‧ 3 小時 (無額外隱藏費用)</div>
+                    </div>
+                    <a id="calc-line-link" href="https://line.me/R/ti/p/@your_line_id" target="_blank" rel="noopener"
+                       class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-2 whitespace-nowrap">
+                        <i class="fa-brands fa-line text-xl"></i>
+                        <span>帶入試算加 LINE 預約</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 成果對比展示區 (Rich Image Gallery) -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Before & After Showcase</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">清潔成果對比 ‧ 真實實拍</h2>
+                <p class="text-slate-500 mt-2 text-base">用心處理每個被忽視的細節，用視覺成果證明專業價值。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- 卡片 1: 浴室水垢 -->
+                <div class="bg-slate-50 rounded-3xl p-5 border border-slate-100 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-droplet text-emerald-500"></i> 浴室玻璃水垢與龍頭拋光
+                        </h3>
+                        <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">深層除垢</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded b-a-badge">BEFORE</span>
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="浴室水垢清潔前" class="rounded-xl w-full h-44 object-cover">
+                        </div>
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded b-a-badge">AFTER</span>
+                            <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=600&q=80" alt="浴室水垢清潔後" class="rounded-xl w-full h-44 object-cover">
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-3">利用酸性除垢藥劑溶解頑固水垢，恢復水龍頭鍍鉻鏡面光澤。</p>
+                </div>
+
+                <!-- 卡片 2: 廚房抽油煙機 -->
+                <div class="bg-slate-50 rounded-3xl p-5 border border-slate-100 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-fire text-emerald-500"></i> 抽油煙機集油盒與瓦斯爐去油
+                        </h3>
+                        <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">重油污溶解</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded b-a-badge">BEFORE</span>
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="廚房去油清潔前" class="rounded-xl w-full h-44 object-cover">
+                        </div>
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded b-a-badge">AFTER</span>
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="廚房去油清潔後" class="rounded-xl w-full h-44 object-cover">
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-3">溫熱溫水搭配去油劑塗抹浸泡，瓦斯爐檯面油膩感徹底消除。</p>
+                </div>
+
+                <!-- 卡片 3: 窗框溝槽 -->
+                <div class="bg-slate-50 rounded-3xl p-5 border border-slate-100 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-border-all text-emerald-500"></i> 鋁門窗溝槽沙塵專用吸刷
+                        </h3>
+                        <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">溝槽深層</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded b-a-badge">BEFORE</span>
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="窗溝清潔前" class="rounded-xl w-full h-44 object-cover">
+                        </div>
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded b-a-badge">AFTER</span>
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="窗溝清潔後" class="rounded-xl w-full h-44 object-cover">
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-3">利用狹縫吸頭與硬毛刷細緻掃除累積數月的戶外灰塵與雨水泥痕。</p>
+                </div>
+
+                <!-- 卡片 4: 地板木質與客廳 -->
+                <div class="bg-slate-50 rounded-3xl p-5 border border-slate-100 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-broom text-emerald-500"></i> 客廳沙發周邊與地板潔淨
+                        </h3>
+                        <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">全室維護</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded b-a-badge">BEFORE</span>
+                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80" alt="客廳清潔前" class="rounded-xl w-full h-44 object-cover">
+                        </div>
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded b-a-badge">AFTER</span>
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="客廳清潔後" class="rounded-xl w-full h-44 object-cover">
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-3">沙發底下與邊角積塵清理，搭配中性清潔劑濕拖，還給赤腳舒適觸感。</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 預約流程與常見問題 (Booking Process & FAQ) -->
+    <section id="process" class="py-16 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- 預約 4 步驟 -->
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Easy 4-Step Booking</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">簡潔透明 ‧ 4 步完成預約</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 relative">
+                    <div class="text-emerald-500 font-black text-3xl mb-2">01</div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-1">加 LINE 諮詢</h3>
+                    <p class="text-xs text-slate-500">告知欲清潔的區域、坪數或提供照片溝通需求。</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 relative">
+                    <div class="text-emerald-500 font-black text-3xl mb-2">02</div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-1">確認時數與時間</h3>
+                    <p class="text-xs text-slate-500">雙方確認估價與排班時間，免付定金安心預約。</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 relative">
+                    <div class="text-emerald-500 font-black text-3xl mb-2">03</div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-1">個人到府服務</h3>
+                    <p class="text-xs text-slate-500">清潔師攜帶專業配備準時到場，細心專注施作。</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 relative">
+                    <div class="text-emerald-500 font-black text-3xl mb-2">04</div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-1">現場驗收與付費</h3>
+                    <p class="text-xs text-slate-500">服務完畢後共同驗收，滿意後轉帳或現金付款。</p>
+                </div>
+            </div>
+
+            <!-- 常見 FAQ Accordion -->
+            <div id="faq" class="max-w-3xl mx-auto">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-bold text-slate-900">常見問題解答 (FAQ)</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <details class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 group">
+                        <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+                            <span>Q: 需要我自己準備清潔工具與劑料嗎？</span>
+                            <span class="text-emerald-500 group-open:rotate-180 transition-transform"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <p class="text-xs text-slate-500 mt-3 leading-relaxed">
+                            不需要！清潔師會自備專業中性清潔劑、擦拭布、水垢刮刀、刮水器與長刷等工具。若您家中習慣使用特定品牌清潔劑或有特殊配備（如吸塵器/水桶），亦可於現場告知使用。
+                        </p>
+                    </details>
+
+                    <details class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 group">
+                        <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+                            <span>Q: 清潔施作期間我需要在現場陪伴嗎？</span>
+                            <span class="text-emerald-500 group-open:rotate-180 transition-transform"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <p class="text-xs text-slate-500 mt-3 leading-relaxed">
+                            首次服務建議開工前 10 分鐘開門並交代重點，清潔結束前 15 分鐘回到現場進行驗收即可。個人清潔師皆具備良民證與良好信譽，請放心交代。
+                        </p>
+                    </details>
+
+                    <details class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 group">
+                        <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+                            <span>Q: 服務區域範圍涵蓋哪裡？</span>
+                            <span class="text-emerald-500 group-open:rotate-180 transition-transform"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <p class="text-xs text-slate-500 mt-3 leading-relaxed">
+                            目前主要提供**台北市全區**與**新北市重點區域**（板橋、中永和、三重、新莊、新店、汐止等）。偏遠山區若需要到府可先加 LINE 詢問車程費用。
+                        </p>
+                    </details>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 頁尾 (Footer) -->
+    <footer class="py-10 bg-slate-900 text-slate-400 text-xs">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fa-solid fa-sparkles text-emerald-400"></i> homeclean.tw
+            </div>
+            <div>
+                © 2026 homeclean.tw 個人居家清潔到府服務 ｜ 台北市 ‧ 新北市
+            </div>
+            <div class="flex gap-4">
+                <a href="https://line.me/R/ti/p/@your_line_id" target="_blank" rel="noopener" class="hover:text-emerald-400 transition-colors">LINE 官方帳號</a>
+                <a href="#calculator" class="hover:text-emerald-400 transition-colors">費用計算</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 7. 固定右下角懸浮 LINE 按鈕 (Floating Sticky Button) -->
+    <a href="https://line.me/R/ti/p/@your_line_id" target="_blank" rel="noopener" id="floating-line-btn"
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all duration-300 flex items-center gap-2.5 group">
+        <i class="fa-brands fa-line text-2xl sm:text-3xl"></i>
+        <span class="font-bold text-sm tracking-wide">
+            加 LINE 預約
+        </span>
+    </a>
+
+    <!-- 費用試算邏輯腳本 (JavaScript) -->
+    <script>
+        let selectedTypeRate = 500;
+        let selectedTypeName = '定期居家清潔';
+        let selectedHours = 3;
+
+        function updateSummary() {
+            const total = selectedTypeRate * selectedHours;
+            document.getElementById('total-price').innerText = `NT$ ${total.toLocaleString()}`;
+            document.getElementById('summary-desc').innerText = `${selectedTypeName} ‧ ${selectedHours} 小時 (無額外隱藏費用)`;
+
+            // 更新帶入 LINE 訊息的預約連結
+            const lineMsg = encodeURIComponent(`你好！我想預約 homeclean 服務：\n項目：${selectedTypeName}\n時數：${selectedHours} 小時\n預估金額：NT$ ${total}`);
+            document.getElementById('calc-line-link').href = `https://line.me/R/ti/p/@your_line_id?text=${lineMsg}`;
+        }
+
+        function selectType(typeKey, rate) {
+            selectedTypeRate = rate;
+
+            // 重置按鈕樣式
+            document.querySelectorAll('.type-btn').forEach(btn => {
+                btn.classList.remove('border-emerald-500', 'bg-emerald-50', 'text-emerald-800');
+                btn.classList.add('border-slate-200', 'bg-white', 'text-slate-700');
+            });
+
+            const activeBtn = document.getElementById(`btn-type-${typeKey}`);
+            activeBtn.classList.remove('border-slate-200', 'bg-white', 'text-slate-700');
+            activeBtn.classList.add('border-emerald-500', 'bg-emerald-50', 'text-emerald-800');
+
+            if (typeKey === 'regular') selectedTypeName = '定期居家清潔';
+            if (typeKey === 'deep') selectedTypeName = '重點深層去污';
+            if (typeKey === 'empty') selectedTypeName = '空屋細清/搬家';
+
+            updateSummary();
+        }
+
+        function selectHours(hrs) {
+            selectedHours = hrs;
+            document.getElementById('hours-display').innerText = `${hrs} 小時`;
+
+            document.querySelectorAll('.hrs-btn').forEach(btn => {
+                btn.classList.remove('border-emerald-500', 'bg-emerald-50', 'text-emerald-800');
+                btn.classList.add('border-slate-200', 'bg-white', 'text-slate-700');
+            });
+
+            const activeBtn = document.getElementById(`btn-hrs-${hrs}`);
+            activeBtn.classList.remove('border-slate-200', 'bg-white', 'text-slate-700');
+            activeBtn.classList.add('border-emerald-500', 'bg-emerald-50', 'text-emerald-800');
+
+            updateSummary();
+        }
+    </script>
+</body>
+</html>
